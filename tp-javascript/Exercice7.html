@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 7</h1>
+    <h1>Ma fiche de présentation</h1>
+    <h1> Calculatrice de cercle</h1>
+<div id="rayon"></div>
+<div id="perimetre"></div>
+<div id="surface"></div>
+
+    <script>
+    // 1. Déclaration de la constante PI
+const PI = Math.PI;
+
+// 2. Demande du rayon et conversion en nombre
+let rayonSaisie = prompt("Entrez le rayon du cercle (en cm) :");
+let rayon = Number(rayonSaisie);
+
+// 3. Calculs du périmètre et de la surface
+let perimetre = 2 * PI * rayon;
+let surface = PI * rayon * rayon;
+
+// 4. Affichage dans les <div> correspondants
+document.getElementById("rayonResultat").innerHTML = `Rayon : ${rayon} cm`;
+
+// On utilise .toFixed(2) pour limiter les chiffres après la virgule
+document.getElementById("perimetreResultat").innerHTML = `Périmètre : ${perimetre.toFixed(2)} cm`;
+document.getElementById("surfaceResultat").innerHTML = `Surface : ${surface.toFixed(2)} cm²`;
+    </script>
+  </body>
+</html>
