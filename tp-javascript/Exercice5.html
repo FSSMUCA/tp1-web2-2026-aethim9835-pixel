@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 5</h1>
+     <p id="nomComplet"></p>
+    <p id="age"></p>
+    <p id="ville"></p>
+    <p id="presentation"></p>
+
+    <script>
+     let prenom ="Amina";
+     let nom ="Ethim";
+     let age = 20;
+     let ville = "Marrakech"; 
+    document.getElementById("nomComplet").innerHTML = prenom + " " + nom;
+    document.getElementById("age").innerHTML = age ;
+    document.getElementById("ville").innerHTML = ville;
+    let phrasepresentation = `Je m'appelle ${prenom} ${nom}, j'ais ${age} ans et j'habite à ${ville}.`;
+    document.getElementById("presentation").innerHTML = phrasepresentation;
+    document.title = "Fiche de " + prenom;
+    </script>
+  </body>
+</html>
